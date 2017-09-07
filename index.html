@@ -3,6 +3,7 @@
 <head>
 	<title>button</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <h1>Hi i  Am Siddhant I am a <span></span></h1>
@@ -11,9 +12,14 @@
 </body>
 <script type="text/javascript" src="ityped.js"></script>
 <script type="text/javascript">
+	$(document).ready(function(){
 	window.ityped.init(document.querySelector("span"),{
 		strings : ["Web Designer","Amatuer Coder","Gamer"]
+
 	})
-	loop:true;
+	$(".button").click(function(){
+		window.location.replace("https://siddhantsingh9811.github.io/siddhantsingh/");
+	})
+})
 </script>
 </html>
